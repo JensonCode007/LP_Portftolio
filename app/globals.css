@@ -8,9 +8,26 @@
 * { box-sizing: border-box; }
 html { max-width: 100%; overflow-x: clip; background: var(--ink); scroll-behavior: smooth; }
 body { min-width: 0; max-width: 100%; margin: 0; overflow-x: clip; background: var(--ink); color: var(--paper); font-family: Manrope, Arial, sans-serif; }
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) { body, body * { cursor: none !important; } }
 main { min-width: 0; overflow-x: clip; }
 a { color: inherit; text-decoration: none; }
 ::selection { color: #0b0b0b; background: #f4f1eb; }
+.page-transition { min-height: 100vh; animation: page-enter .48s cubic-bezier(.22,.8,.26,1) both; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.glow-cursor-root { position: relative; min-height: 100vh; }
+.glow-cursor-layer { position: fixed; inset: 0; z-index: 80; pointer-events: none; overflow: hidden; }
+.glow-cursor-point { position: absolute; left: 0; top: 0; display: block; border-radius: 999px; pointer-events: none; opacity: 0; filter: blur(5px); mix-blend-mode: screen; will-change: transform, opacity; transition: opacity .25s ease; }
+.glow-cursor-head { filter: blur(1px); box-shadow: 0 0 18px rgba(244,241,235,.48), 0 0 45px rgba(244,241,235,.18); }
+.glow-cursor-root[data-cursor-active="true"] .glow-cursor-point { opacity: .62; }
+.intro-overlay { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; align-content: center; gap: 1.25rem; background: #0b0b0b; isolation: isolate; animation: intro-in .7s ease both; }
+.intro-overlay::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .18; background: radial-gradient(circle at 50% 46%, rgba(244,241,235,.26), transparent 34%), repeating-linear-gradient(90deg, transparent 0 80px, rgba(255,255,255,.04) 81px 82px); }
+.intro-overlay.is-leaving { animation: intro-out .7s cubic-bezier(.7,0,.2,1) both; pointer-events: none; }
+.masked-heading { margin: 0; max-width: 90vw; text-align: center; letter-spacing: -.07em; line-height: .88; background: linear-gradient(110deg, #8d8982 0%, #f4f1eb 28%, #fff 48%, #aaa59d 72%, #f4f1eb 100%); background-size: 220% auto; -webkit-background-clip: text; background-clip: text; color: transparent !important; animation: masked-shimmer 2.1s ease-in-out infinite alternate, masked-rise 1s cubic-bezier(.16,1,.3,1) both; }
+.intro-kicker { margin: 0; color: rgba(244,241,235,.42); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; animation: masked-rise 1s .15s cubic-bezier(.16,1,.3,1) both; }
+@keyframes masked-shimmer { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
+@keyframes masked-rise { from { opacity: 0; transform: translateY(24px); clip-path: inset(100% 0 0); } to { opacity: 1; transform: translateY(0); clip-path: inset(0); } }
+@keyframes intro-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes intro-out { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-5%); visibility: hidden; } }
 .mono { font-family: 'DM Mono', monospace; letter-spacing: .04em; }
 .display { font-family: 'Playfair Display', Georgia, serif; }
 .grain { position: relative; }
@@ -47,6 +64,7 @@ a { color: inherit; text-decoration: none; }
 .globe-pin-usa { left: 18%; top: 38%; }.globe-pin-aus { right: 13%; bottom: 26%; }
 @keyframes globe-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .globe-sphere { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .page-transition, .intro-overlay, .masked-heading, .intro-kicker { animation: none; } .glow-cursor-layer { display: none; } }
 @media (max-width: 768px) {
   .hero-word { font-size: clamp(2.9rem, 14.2vw, 3.7rem); line-height: .88; letter-spacing: -.07em; overflow-wrap: anywhere; }
   .display { overflow-wrap: anywhere; }
@@ -54,4 +72,5 @@ a { color: inherit; text-decoration: none; }
   .portfolio-tab-nav .gooey-nav ul { gap: .4rem; }
   .portfolio-tab-nav .gooey-nav li { font-size: 12px; }
   .portfolio-tab-nav .gooey-nav li a { padding: .52rem .72rem; }
+  .intro-kicker { max-width: 80vw; text-align: center; font-size: 9px; }
 }
