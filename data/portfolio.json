@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "name": "Leon Paulo",
+    "role": "Marketing Specialist (Freelance)",
+    "location": "Kerala, India",
+    "email": "1@leonpaulo.xyz",
+    "phone": "+91 7736 393 444",
+    "website": "leonpaulo.xyz"
+  },
+  "experience": [
+    { "slug": "animal-i", "company": "ANIMAL-i", "role": "Digital Marketing Manager / MARCOM Manager", "period": "Sep 2022 - Present", "place": "Kochi, Kerala", "summary": "Leading full-funnel digital campaigns and key client relationships.", "clients": ["B&B Properties", "Cinema Factory", "Mehndi Wedding Mall", "Fairytales Boutique", "Tatva Design Elements", "ABAD Interiors", "Bison Shells", "Jivatva", "DSA Gym", "TRIAD4"], "focus": ["Campaign strategy", "Google & Meta Ads", "Conversion optimisation", "Key account management"] },
+    { "slug": "poptale", "company": "Poptale Digital Marketing / Popkon Creatives", "role": "Sr. Brand Manager", "period": "Apr 2022 - Sep 2022", "place": "Kochi, Kerala", "summary": "Guided brand strategy and market intelligence for growth-focused accounts.", "clients": ["Sunny Diamonds", "Kent Builders", "Oralium", "Euro Guard", "Style Plus", "Galaxy Homes", "MyGate", "Moksha Luxury Stays", "Granary Activity Stays"], "focus": ["Brand strategy", "Competitor analysis", "Client presentations", "Growth research"] },
+    { "slug": "unschool", "company": "Unschool", "role": "Marketing & Operations Executive", "period": "Nov 2020 - Mar 2022", "place": "Hyderabad, Telangana", "summary": "Coordinated a growing marketing team and launched campaigns from the ground up.", "clients": ["Education and training ventures"], "focus": ["Team management", "Recruiting", "Lead generation", "Campaign launches"] },
+    { "slug": "icons-technologies", "company": "Icons Technologies", "role": "Jr. Marketing Executive", "period": "May 2020 - Oct 2020", "place": "Coimbatore, Tamil Nadu", "summary": "Built early foundations in SEO content, market research, and sales conversion.", "clients": ["Technology and web clients"], "focus": ["SEO content", "Email marketing", "Market expansion", "Lead conversion"] }
+  ],
+  "freelance": ["Van Heusen, Louis Philippe & Allen Solly", "Alice Blue", "Law Offices of Scott Ives", "Frame Displays", "The Mighty Movers", "Snap Happy", "ClaraLoo", "47 Jewelry", "Heiley Spaces", "What's Your High?", "Wah Turk", "Rebirth", "RUEL", "Advantage Advertising", "Canvas Restaurant & Pizzeria", "Kick It", "Tatva Designs", "Parathas and Pizza", "Forever Miss India", "Mia Nakshatra's"],
+  "creativeWork": [
+    { "title": "Campaign Narrative 01", "client": "Client project", "image": "/assets/creatives/creative-01.png" }, { "title": "Campaign Narrative 02", "client": "Client project", "image": "/assets/creatives/creative-02.png" }, { "title": "Campaign Narrative 03", "client": "Client project", "image": "/assets/creatives/creative-03.png" }, { "title": "Campaign Narrative 04", "client": "Client project", "image": "/assets/creatives/creative-04.png" }, { "title": "Campaign Narrative 05", "client": "Client project", "image": "/assets/creatives/creative-05.png" }, { "title": "Campaign Narrative 06", "client": "Client project", "image": "/assets/creatives/creative-06.png" }, { "title": "Campaign Narrative 07", "client": "Client project", "image": "/assets/creatives/creative-07.png" }, { "title": "Campaign Narrative 08", "client": "Client project", "image": "/assets/creatives/creative-08.png" }, { "title": "Campaign Narrative 09", "client": "Client project", "image": "/assets/creatives/creative-09.png" }, { "title": "Campaign Narrative 10", "client": "Client project", "image": "/assets/creatives/creative-10.png" }, { "title": "Campaign Narrative 11", "client": "Client project", "image": "/assets/creatives/creative-11.png" }, { "title": "Campaign Narrative 12", "client": "Client project", "image": "/assets/creatives/creative-12.png" }, { "title": "Campaign Narrative 13", "client": "Client project", "image": "/assets/creatives/creative-13.png" }, { "title": "Campaign Narrative 14", "client": "Client project", "image": "/assets/creatives/creative-14.png" }, { "title": "Campaign Narrative 15", "client": "Client project", "image": "/assets/creatives/creative-15.png" }, { "title": "Campaign Narrative 16", "client": "Client project", "image": "/assets/creatives/creative-16.png" }, { "title": "Campaign Narrative 17", "client": "Client project", "image": "/assets/creatives/creative-17.png" }, { "title": "Campaign Narrative 18", "client": "Client project", "image": "/assets/creatives/creative-18.png" }
+  ],
+  "logos": ["Logo 01", "Logo 02", "Logo 03", "Logo 04", "Logo 05", "Logo 06", "Logo 07", "Logo 08", "Logo 09", "Logo 10", "Logo 11", "Logo 12", "Logo 13", "Logo 14", "Logo 15", "Logo 16"],
+  "caseStudies": [
+    { "title": "Case Study 01", "client": "Client name", "image": "/assets/case_studies/case-study-01.png" },
+    { "title": "Case Study 02", "client": "Client name", "image": "/assets/case_studies/case-study-02.png" },
+    { "title": "Case Study 03", "client": "Client name", "image": "/assets/case_studies/case-study-03.png" },
+    { "title": "Case Study 04", "client": "Client name", "image": "/assets/case_studies/case-study-04.png" },
+    { "title": "Case Study 05", "client": "Client name", "image": "/assets/case_studies/case-study-05.png" },
+    { "title": "Case Study 06", "client": "Client name", "image": "/assets/case_studies/case-study-06.png" }
+  ]
+}

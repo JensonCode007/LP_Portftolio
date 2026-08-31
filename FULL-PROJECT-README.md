@@ -1,0 +1,1 @@
+Complete Next.js portfolio. Run npm install then npm run dev. Portfolio now has only ParticleText + GooeyNav tabs with tightened spacing. Main navbar is regular links. Add background.mp4 and case-study images under public/assets/case_studies.

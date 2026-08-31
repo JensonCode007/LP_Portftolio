@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+export function Footer() { return <footer className="border-t border-white/10 px-5 py-10 md:px-8"><div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-8 md:flex-row md:items-end"><div><p className="mono text-[10px] uppercase text-white/40">Available for considered collaborations</p><a href="mailto:1@leonpaulo.xyz" className="mt-2 inline-flex items-center gap-2 text-2xl text-white hover:text-white/60 md:text-4xl">1@leonpaulo.xyz <ArrowUpRight /></a></div><div className="flex gap-5 mono text-[10px] uppercase text-white/45"><Link href="/work">Work</Link><Link href="/about">Profile</Link><a href="https://leonpaulo.xyz" target="_blank">Website</a></div></div></footer>; }
