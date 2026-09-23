@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const stats = [{ value: 8, display: "08+", label: "Years in practice" }, { value: 100, display: "100", label: "Markets reached" }, { value: 20, display: "20+", label: "Freelance partnerships" }, { value: 15, display: "15+", label: "Industries shaped" }];
+const stats = [{ value: 8, display: "08+", label: "Years in practice" }, { value: 100, display: "100+", label: "Markets reached" }, { value: 20, display: "20+", label: "Freelance partnerships" }, { value: 15, display: "15+", label: "Industries shaped" }];
 
 export function CounterStats() {
   const ref = useRef<HTMLDivElement>(null);
