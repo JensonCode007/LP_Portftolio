@@ -12,7 +12,7 @@ export function FlexibleAssetImage({ src, alt, className = "" }: { src: string; 
   const [candidateIndex, setCandidateIndex] = useState(0);
   const [missing, setMissing] = useState(false);
   if (missing) return null;
-  return <img src={candidates[candidateIndex]} alt={alt} className={className} onError={() => {
+  return <img src={candidates[candidateIndex]} alt={alt} loading="lazy" decoding="async" className={className} onError={() => {
     if (candidateIndex < candidates.length - 1) setCandidateIndex(candidateIndex + 1);
     else setMissing(true);
   }} />;
